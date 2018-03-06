@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "start": "webpack-dev-server --inline --hot",
     "test": "jest -i --verbose",
     "watch": "webpack-dev-server --inline --hot"
   },
