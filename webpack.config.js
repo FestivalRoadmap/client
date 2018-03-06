@@ -63,6 +63,12 @@ module.exports = {
             },
 
         ]
+    },
+
+    devServer: {
+      inline: true,
+      contentBase: './src/build',
+      port: 5000,
     }
 
 }
