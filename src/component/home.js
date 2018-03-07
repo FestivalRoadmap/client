@@ -1,11 +1,10 @@
 import React from 'react';
+import Feed from './feed/feed.js'
 
 class Home extends React.Component {
   render(){
     return (
-        <div>
-          <body> Home body </body>
-        </div>
+      <Feed />
     )
   }
 }

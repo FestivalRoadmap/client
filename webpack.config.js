@@ -70,5 +70,4 @@ module.exports = {
       contentBase: './src/build',
       port: 5000,
     }
-
 }

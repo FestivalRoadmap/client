@@ -5,7 +5,7 @@ class Search extends React.Component {
     return (
       <p>
         render form with inputs.
-      </footer>
+      </p>
     )
   }
 }

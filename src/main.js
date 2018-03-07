@@ -6,9 +6,11 @@ import {BrowserRouter, Route} from 'react-router-dom';
 
 import Header from './component/header.js';
 import Home from './component/home.js';
-// import Footer from './component/footer.js';
-// import Navbar from './component/navbar.js';
-// import Search from './component/festfinder/form.js'
+import Navbar from './component/navbar.js';
+import About from './component/about.js';
+import Search from './component/festfinder/form.js'
+import Sidebar from './component/sidebar/sidebar.js'
+import Footer from './component/footer.js';
 
 class App extends React.Component{
   constructor(props) {
@@ -24,11 +26,15 @@ class App extends React.Component{
 
   render(){
     return(
-      <div>
+      <div id='container'>
         <Header />
+        <Navbar />
+        <Sidebar />
         <main>
           <Route exact path='/' component={Home} />
-      </main>
+          <Route exact path='/about' component={About} />
+        </main>
+        <Footer />
       </div>
     )
   }
